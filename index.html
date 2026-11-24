@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#103f32" />
+    <meta name="description" content="Coba aksesori wisuda dalam pengalaman AR langsung dari browser." />
+    <title>Campus AR — Momen Wisudamu</title>
+  </head>
+  <body>
+    <main class="app-shell">
+      <header class="topbar">
+        <a class="brand" href="#top" aria-label="Campus AR beranda">
+          <span class="brand-mark" aria-hidden="true">C</span>
+          <span><strong>campus<span>AR</span></strong><small>YOUR GRADUATION MOMENT</small></span>
+        </a>
+        <span class="edition"><i></i> EDISI WISUDA</span>
+      </header>
+      <section class="intro" id="top">
+        <p class="eyebrow">CHAPTER 01 · THE BIG DAY</p>
+        <h1>Kenakan momen<br />yang <em>kamu impikan.</em></h1>
+        <p class="lede">Coba gaya wisuda favoritmu, lalu abadikan momen kelulusanmu.</p>
+      </section>
+      <section class="studio" aria-label="Studio augmented reality">
+        <div class="camera-stage" id="ar-container">
+          <div class="stage-art" aria-hidden="true"><span class="orbit orbit-one"></span><span class="orbit orbit-two"></span><span class="portrait-halo"></span><span class="portrait-silhouette"><i></i></span><span class="stage-caption">YOUR MOMENT<br /><b>BEGINS HERE</b></span></div>
+          <div class="stage-top"><span class="live-pill"><i></i> <span id="live-label">STUDIO READY</span></span></div>
+          <div class="camera-shade"></div>
+          <div class="tracking-state" id="tracking-state" role="status" aria-live="polite"><span class="status-dot"></span><span id="status-text">Mulai studio untuk mengaktifkan kamera</span></div>
+          <div class="loading-overlay" id="loading-overlay" hidden><span class="spinner"></span><span id="loading-text">Menyiapkan studio…</span></div>
+          <div class="permission-card" id="permission-card" hidden role="alert"><span class="permission-icon">◉</span><h2 id="error-title">Kamera belum aktif</h2><p id="error-message">Izinkan akses kamera untuk mencoba filter AR.</p><button type="button" class="text-button" id="retry-camera">Coba lagi <span>↗</span></button></div>
+          <button type="button" id="start-camera" class="start-camera"><span class="start-icon">↗</span> Mulai studio AR</button>
+          <div class="stage-bottom"><span>BUILT FOR YOUR BIG DAY</span><span class="stage-count">01 <i>/</i> 02</span></div>
+        </div>
+        <div class="studio-controls">
+          <div class="section-heading"><div><p class="eyebrow">PILIH GAYAMU</p><h2>Top picks</h2></div><span class="filter-count">02 FILTER</span></div>
+          <div class="filter-list" id="filter-list" role="group" aria-label="Pilihan filter"></div>
+          <div class="capture-row"><p id="capture-hint">Posisikan wajah di dalam bingkai</p><button class="shutter" id="capture-photo" type="button" aria-label="Ambil foto" disabled><span></span></button><button class="share-hint" type="button" id="save-info" aria-label="Informasi penyimpanan lokal">↗</button></div>
+          <p class="privacy-note"><span>✳</span> Privat sejak awal. Foto tersimpan di perangkatmu.</p>
+        </div>
+      </section>
+      <footer class="footer"><span>CAMPUS AR <i>·</i> MADE FOR THE MOMENT</span><span>BEHIND EVERY GRAD IS A STORY.</span></footer>
+      <div class="toast" id="toast" role="status" aria-live="polite"></div>
+    </main>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
