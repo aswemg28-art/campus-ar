@@ -1,0 +1,6 @@
+{
+  "filters": [
+    { "id": "toga", "name": "Toga Wisuda", "description": "Klasik, siap melangkah ke babak baru.", "model": "models/toga.glb", "anchor": 10, "position": [0, 0.57, -0.08], "rotation": [0, 0, 0], "scale": [1, 1, 1], "animated": true, "animationName": "idle" },
+    { "id": "glasses", "name": "Kacamata Wisuda", "description": "Sedikit kilau untuk hari spesialmu.", "model": "models/glasses.glb", "anchor": 168, "position": [0, 0.015, -0.035], "rotation": [0, 0, 0], "scale": [1, 1, 1], "animated": false, "animationName": null }
+  ]
+}
